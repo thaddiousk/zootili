@@ -1,0 +1,117 @@
+@font-face {
+	font-family: 'Bellota-LightItalic';
+	src: url('../fonts/Bellota-LightItalic.otf');
+}
+
+@font-face {
+	font-family: 'Bellota-BoldItalic';
+	src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+	overflow: hidden; /*Prevents scrolling below image. */
+}
+
+form {
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #7FA1DF
+}
+
+.wrapper {
+	background-image: url("../images/backgrounds/desktop_1600_1080.jpg");
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	min-width: 1080px;
+	min-height: 1600px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.login_box {
+	font-family: 'Bellota-LightItalic', sans-serif;
+	position: relative;
+	top: 2%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 35%;
+	background-color: #ffffff;
+	border: 1px solid #EDEDED;
+	border-radius: 7px;
+	padding: 5px;
+	opacity: 0.9;
+}
+
+.login_header {
+	font-family: 'Bellota-LightItalic', sans-serif;
+	width: 100%;
+	height: 90px;
+	background-color: #A0BAEB;
+	color: #fff;
+	text-align: center;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	margin-bottom: 10px;
+}
+
+.login_header h1 {
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #206795;
+	text-shadow: #73B6E2 0.5px 0.5px 0px;
+	font-size: 250%;
+}
+
+@media screen and (max-width: 1080px) { /* Specific to this particular image */
+  .wrapper {
+    left: 50%;
+    margin-left: -540px;   /* 50% */
+  }
+}
+
+input[type="submit"] {
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	background-color: #A0BAEB;
+	border: 1px solid #A0BAEB;
+	border-radius: 3px;
+	margin: 5px 0px 10px 0px;
+	padding: 5px 10px 5px 10px;
+	color: #206795;
+	text-shadow: #73B6E2 0.5px 0.5px 0px;
+	font-size: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	border: 1px solid #e5e5e5
+	margin-top: 5px;
+	width: 70%;
+	height: 35px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+/* Changes input border when cursor hovers over it. */
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+	border-color: #A0BAEB;
+}
+
+/* Changes input border when user tabs through selections. */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+	border-color: #A0BAEB;
+}
+
+#shown_second {
+	display: none;
+}
